@@ -7,12 +7,14 @@ import './assets/scss/style.scss';
 
 // pages for this product
 import Components from "./views/components/components.jsx";
+import CustomComponents from "./views/custom-components/custom-components.jsx";
 
 var hist = createBrowserHistory();
 
 ReactDOM.render(
   <Router history={hist}>
     <Switch>
+      <Route path="/custom-components" component={CustomComponents} />
       <Route path="/" component={Components} />
     </Switch>
   </Router>,

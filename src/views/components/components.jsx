@@ -23,7 +23,6 @@ import JsComponents from "./sections/js-components.jsx";
 
 class Components extends React.Component {
   render() {
-    const { classes, ...rest } = this.props;
     return (
         <div id="main-wrapper">
             <Header />

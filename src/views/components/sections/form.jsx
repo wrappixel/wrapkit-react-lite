@@ -19,25 +19,25 @@ class Form extends React.Component {
                     <div className="col-md-12">
                         <form className="row">
                             <div className="form-group col-md-6">
-                                <label for="exampleInputEmail1">User Name</label>
+                                <label htmlFor="exampleInputEmail1">User Name</label>
                                 <input type="text" className="form-control" id="exampleInputEmail1" placeholder="Enter Username" />
                             </div>
                             <div className="form-group col-md-6">
-                                <label for="exampleInputEmail1">Email address</label>
+                                <label htmlFor="exampleInputEmail1">Email address</label>
                                 <input type="email" className="form-control" id="exampleInputEmail1" placeholder="Enter email" />
                             </div>
                             <div className="form-group col-md-6">
-                                <label for="exampleInputPassword1">Password</label>
+                                <label htmlFor="exampleInputPassword1">Password</label>
                                 <input type="password" className="form-control" id="exampleInputPassword1" placeholder="Password" />
                             </div>
                             <div className="form-group col-md-6">
-                                <label for="exampleInputPassword1">Confirm Password</label>
+                                <label htmlFor="exampleInputPassword1">Confirm Password</label>
                                 <input type="password" className="form-control" id="exampleInputPassword1" placeholder="Confirm Password" />
                             </div>
                             <div className="form-group col-md-12">
                                 <div className="checkbox checkbox-success">
                                     <input id="checkbox1" type="checkbox" />
-                                    <label for="checkbox1"> Remember me </label>
+                                    <label htmlFor="checkbox1"> Remember me </label>
                                 </div>
                             </div>
                             <div className="col-md-12">
