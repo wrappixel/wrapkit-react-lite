@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React from 'react';
 
 import img1 from '../../../assets/images/blog/blog-home/img3.jpg';

@@ -14,16 +14,16 @@ Global Styles
 *******************/
 
 * {
-    outline: none;  
+    outline: none;
 }
- 
+
 body {
     background: $bodycolor;
     font-family: $bodyfont;
-    margin: 0; 
+    margin: 0;
     overflow-x: hidden;
     color: $bodytext;
-    font-weight: 300; 
+    font-weight: 300;
 }
 
 html {
@@ -39,18 +39,22 @@ a:focus {
 
 a.link {
     color: $headingtext;
+
     &:hover,
     &:focus {
         color: $themecolor;
     }
 }
-a.white-link{
+
+a.white-link {
     color: $white;
+
     &:hover,
     &:focus {
         color: $dark;
     }
 }
+
 .img-responsive {
     width: 100%;
     height: auto;
@@ -63,7 +67,7 @@ a.white-link{
 
 html body .mdi:before,
 html body .mdi-set {
-    line-height: initial; 
+    line-height: initial;
 }
 
 
@@ -120,6 +124,7 @@ h6 {
 .display-6 {
     font-size: 36px;
 }
+
 .display-7 {
     font-size: 26px;
 }
@@ -133,21 +138,24 @@ html body {
     .dl {
         display: inline-block;
     }
+
     .db {
         display: block;
     }
 }
 
 .no-wrap {
+
     td,
     th {
         white-space: nowrap;
     }
 }
 
-.circle{
+.circle {
     border-radius: 100%;
 }
+
 /*******************
 Blockquote
 *******************/
@@ -175,72 +183,95 @@ html body {
     .p-0 {
         padding: 0px;
     }
+
     .p-10 {
         padding: 10px;
     }
+
     .p-15 {
         padding: 15px;
     }
+
     .p-20 {
         padding: 20px;
     }
+
     .p-30 {
         padding: 30px;
     }
+
     .p-40 {
         padding: 40px;
     }
+
     .p-l-0 {
         padding-left: 0px;
     }
+
     .p-l-10 {
         padding-left: 10px;
     }
+
     .p-l-20 {
         padding-left: 20px;
     }
+
     .p-r-0 {
         padding-right: 0px;
     }
+
     .p-r-10 {
         padding-right: 10px;
     }
+
     .p-r-20 {
         padding-right: 20px;
     }
+
     .p-r-30 {
         padding-right: 30px;
     }
+
     .p-r-40 {
         padding-right: 40px;
     }
+
     .p-t-0 {
         padding-top: 0px;
     }
+
     .p-t-10 {
         padding-top: 10px;
     }
+
     .p-t-20 {
         padding-top: 20px;
     }
+
     .p-t-30 {
         padding-top: 30px;
     }
+
     .p-b-0 {
         padding-bottom: 0px;
     }
+
     .p-b-5 {
         padding-bottom: 5px;
     }
+
     .p-b-10 {
         padding-bottom: 10px;
     }
+
     .p-b-20 {
         padding-bottom: 20px;
     }
+
     .p-b-30 {
         padding-bottom: 30px;
     }
+
     .p-b-40 {
         padding-bottom: 40px;
     }
@@ -255,81 +286,107 @@ html body {
     .m-0 {
         margin: 0px;
     }
+
     .m-l-5 {
         margin-left: 5px;
     }
+
     .m-l-10 {
         margin-left: 10px;
     }
+
     .m-l-15 {
         margin-left: 15px;
     }
+
     .m-l-20 {
         margin-left: 20px;
     }
+
     .m-l-30 {
         margin-left: 30px;
     }
+
     .m-l-40 {
         margin-left: 40px;
     }
+
     .m-r-5 {
         margin-right: 5px;
     }
+
     .m-r-10 {
         margin-right: 10px;
     }
+
     .m-r-15 {
         margin-right: 15px;
     }
+
     .m-r-20 {
         margin-right: 20px;
     }
+
     .m-r-30 {
         margin-right: 30px;
     }
+
     .m-r-40 {
         margin-right: 40px;
     }
+
     .m-t-0 {
         margin-top: 0px;
     }
+
     .m-t-5 {
         margin-top: 5px;
     }
+
     .m-t-10 {
         margin-top: 10px;
     }
+
     .m-t-15 {
         margin-top: 15px;
     }
+
     .m-t-20 {
         margin-top: 20px;
     }
+
     .m-t-30 {
         margin-top: 30px;
     }
+
     .m-t-40 {
         margin-top: 40px;
     }
+
     .m-b-0 {
         margin-bottom: 0px;
     }
+
     .m-b-5 {
         margin-bottom: 5px;
     }
+
     .m-b-10 {
         margin-bottom: 10px;
     }
+
     .m-b-15 {
         margin-bottom: 15px;
     }
+
     .m-b-20 {
         margin-bottom: 20px;
     }
+
     .m-b-30 {
         margin-bottom: 30px;
     }
+
     .m-b-40 {
         margin-bottom: 40px;
     }
@@ -344,9 +401,11 @@ html body {
     .vt {
         vertical-align: top;
     }
+
     .vm {
         vertical-align: middle;
     }
+
     .vb {
         vertical-align: bottom;
     }
@@ -359,12 +418,15 @@ Opacity
 .op-8 {
     opacity: 0.8;
 }
+
 .op-7 {
     opacity: 0.7;
 }
+
 .op-5 {
     opacity: 0.5;
 }
+
 .op-3 {
     opacity: 0.3;
 }
@@ -377,36 +439,47 @@ html body {
     .font-bold {
         font-weight: 700;
     }
+
     .font-semibold {
         font-weight: 600;
     }
+
     .font-normal {
         font-weight: normal;
     }
+
     .font-light {
         font-weight: 300;
     }
+
     .font-medium {
         font-weight: 500;
     }
+
     .font-16 {
         font-size: 16px;
     }
+
     .font-14 {
         font-size: 14px;
     }
+
     .font-13 {
         font-size: 13px;
     }
+
     .font-10 {
         font-size: 10px;
     }
+
     .font-18 {
         font-size: 18px;
     }
+
     .font-20 {
         font-size: 20px;
     }
+
     .font-stylish {
         font-family: "Calafia-Regular";
     }
@@ -419,22 +492,27 @@ Border
 
 html body {
     .b-0 {
-        border: none!important;
+        border: none !important;
     }
+
     .b-r {
         border-right: 1px solid $border;
     }
+
     .b-l {
         border-left: 1px solid $border;
     }
+
     .b-b {
         border-bottom: 1px solid $border;
     }
+
     .b-t {
         border-top: 1px solid $border;
     }
+
     .b-all {
-        border: 1px solid $border!important;
+        border: 1px solid $border !important;
     }
 }
 
@@ -476,63 +554,70 @@ Text Colors
 *******************/
 
 .text-white {
-    color: $white!important;
+    color: $white !important;
 }
 
 .text-danger {
-    color: $danger!important;
+    color: $danger !important;
 }
 
 .text-muted {
-    color: $muted!important;
+    color: $muted !important;
 }
 
 .text-warning {
-    color: $warning!important;
+    color: $warning !important;
 }
 
 .text-success {
-    color: $success!important;
+    color: $success !important;
 }
 
 .text-info {
-    color: $info!important;
+    color: $info !important;
 }
 
 .text-inverse {
-    color: $inverse!important;
+    color: $inverse !important;
 }
-.text-success-gradiant{
+
+.text-success-gradiant {
     @include linear-gradient (to right, $success 0%, $success-dark 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    text-fill-color:transparent;
+    text-fill-color: transparent;
 }
-.text-info-gradiant{
+
+.text-info-gradiant {
     @include linear-gradient (to right, $info 0%, $primary 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    text-fill-color:transparent;
+    text-fill-color: transparent;
 }
 
 html body {
     .text-blue {
         color: $blue;
     }
+
     .text-purple {
         color: $purple;
     }
+
     .text-primary {
-        color: $primary!important;
+        color: $primary !important;
     }
+
     .text-megna {
         color: $megna;
     }
+
     .text-dark {
         color: $bodytext;
     }
+
     .text-themecolor {
         color: $themecolor;
     }
@@ -562,67 +647,88 @@ Background Colors
 .bg-danger {
     background-color: $danger !important;
 }
+
 .bg-orange {
     background-color: $orange !important;
 }
+
 .bg-yellow {
     background-color: $yellow;
 }
+
 .bg-facebook {
     background-color: $facebook;
 }
+
 .bg-twitter {
     background-color: $twitter;
 }
-.bg-success-gradiant{
+
+.bg-success-gradiant {
     @include linear-gradient (to right, $success 0%, $success-dark 100%);
 }
-.bg-info-gradiant{
+
+.bg-info-gradiant {
     @include linear-gradient (to right, $info 0%, $primary 100%);
-} 
-.bg-danger-gradiant{
-    @include linear-gradient (to right, $danger 0%, $orange 100%); 
-} 
-html body { 
+}
+
+.bg-danger-gradiant {
+    @include linear-gradient (to right, $danger 0%, $orange 100%);
+}
+
+html body {
     .bg-megna {
         background-color: $megna;
     }
+
     .bg-theme {
         background-color: $themecolor;
     }
+
     .bg-inverse {
         background-color: $inverse;
     }
+
     .bg-purple {
         background-color: $purple;
     }
-    .bg-light{
-        background-color: $light!important;
+
+    .bg-light {
+        background-color: $light !important;
     }
+
     .bg-light-primary {
         background-color: $light-primary;
     }
+
     .bg-light-success {
         background-color: $light-success;
     }
+
     .bg-light-info {
         background-color: $light-info;
     }
+
     .bg-light-extra {
         background-color: $extra-light;
     }
+
     .bg-light-warning {
         background-color: $light-warning;
     }
+
     .bg-light-danger {
         background-color: $light-danger;
     }
+
     .bg-light-inverse {
         background-color: $light-inverse;
     }
+
     .bg-light {
         background-color: $light;
     }
+
     .bg-white {
         background-color: $white;
     }
@@ -643,6 +749,7 @@ Rounds
     text-align: center;
     border-radius: 100%;
     background: $info;
+
     img {
         border-radius: 100%;
     }
@@ -837,20 +944,23 @@ List-style-none
 ul.list-style-none {
     margin: 0px;
     padding: 0px;
+
     li {
         list-style: none;
+
         a {
             color: $bodytext;
             padding: 8px 0px;
             display: block;
             text-decoration: none;
+
             &:hover {
                 color: $themecolor;
             }
         }
     }
 }
-  
+
 
 /*******************
 dropdown-item
@@ -864,63 +974,77 @@ dropdown-item
 /*******************
 Buttons
 ******************/
-.btn{
-    color:$white;
+.btn {
+    color: $white;
     padding: 10px 25px;
     cursor: pointer;
-    box-shadow:0 2px 5px rgba(0, 0, 0, 0.14);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.14);
     transition: 0s;
-    &:hover{
+
+    &:hover {
         color: $white;
     }
-    &:focus{
-        box-shadow:none;
+
+    &:focus {
+        box-shadow: none;
     }
 }
-.btn-link{
+
+.btn-link {
     box-shadow: none;
-    color:$dark;
+    color: $dark;
     padding: 10px 15px;
-    .underline{
+
+    .underline {
         border-bottom: 1px solid $dark;
     }
-    &:hover{
-        color:$success;
+
+    &:hover {
+        color: $success;
     }
 }
-.btn-light{
-    color:$dark;
-    &:hover{
+
+.btn-light {
+    color: $dark;
+
+    &:hover {
         background: $dark;
-        color:$white;
-        border-color:$dark;
+        color: $white;
+        border-color: $dark;
     }
 }
-.btn-lg{
+
+.btn-lg {
     padding: .75rem 1.5rem;
     font-size: 1.25rem;
 }
-.btn-md{
-    padding:15px 45px;
+
+.btn-md {
+    padding: 15px 45px;
     font-size: 16px;
 }
-.btn-sm{
-    padding:.25rem .5rem;
+
+.btn-sm {
+    padding: .25rem .5rem;
     font-size: 12px;
 }
-.btn-xs{
-    padding:.25rem .5rem;
+
+.btn-xs {
+    padding: .25rem .5rem;
     font-size: 10px;
 }
-.btn-circle{
+
+.btn-circle {
     border-radius: 100%;
     width: 40px;
     height: 40px;
     padding: 10px;
-    &.btn-md{
-        padding:22px 25px;
+
+    &.btn-md {
+        padding: 22px 25px;
     }
 }
+
 .btn-circle.btn-sm {
     width: 35px;
     height: 35px;
@@ -942,22 +1066,28 @@ Buttons
     padding: 14px 15px;
     font-size: 24px;
 }
-.btn-rounded{
+
+.btn-rounded {
     border-radius: 60px;
     -webkit-border-radius: 60px;
 }
-.btn-arrow{
+
+.btn-arrow {
     position: relative;
-    span{
+
+    span {
         display: inline-block;
         position: relative;
         transition: all 300ms ease-out;
         will-change: transform;
     }
-    &:hover span, &:focus span{
+
+    &:hover span,
+    &:focus span {
         transform: translate3d(-1rem, 0, 0);
     }
-    i{
+
+    i {
         position: absolute;
         width: 1.1em;
         right: 0px;
@@ -968,25 +1098,32 @@ Buttons
         transition: all 300ms ease-out;
         will-change: right, opacity;
     }
-    &:hover i, &:focus i{
+
+    &:hover i,
+    &:focus i {
         opacity: 1;
         right: -2rem;
     }
 }
+
 .btn-secondary,
 .btn-secondary.disabled {
-    
+
     transition: 0.2s ease-in;
     background-color: $white;
-    color: $bodytext; 
-    &:hover{
-        
-        color:$white!important;
+    color: $bodytext;
+
+    &:hover {
+
+        color: $white !important;
     }
-    &.active, &:active, &:focus{
-        color:$white!important;
-        background:$dark;
-        border-color:$dark; 
+
+    &.active,
+    &:active,
+    &:focus {
+        color: $white !important;
+        background: $dark;
+        border-color: $dark;
     }
 }
 
@@ -994,42 +1131,56 @@ Buttons
 .btn-primary.disabled {
     background: $primary;
     border: 1px solid $primary;
-    
+
     transition: 0.2s ease-in;
-    &:hover{
+
+    &:hover {
         background: $primary-dark;
         border: 1px solid $primary-dark;
     }
-    &.active, &:active, &:focus{
-        background: $primary-dark;   
+
+    &.active,
+    &:active,
+    &:focus {
+        background: $primary-dark;
     }
 }
+
 .btn-themecolor,
 .btn-themecolor.disabled {
     background: $themecolor;
-    color:$white;
+    color: $white;
     border: 1px solid $themecolor;
-    &:hover{
+
+    &:hover {
         background: $themecolor-dark;
-        
+
         border: 1px solid $themecolor-dark;
     }
-    &.active, &:active, &:focus{
+
+    &.active,
+    &:active,
+    &:focus {
         background: $themecolor-dark;
     }
-    
+
 }
+
 .btn-success,
 .btn-success.disabled {
     background: $success;
     border: 1px solid $success;
-    &:hover{
+
+    &:hover {
         background: $success-dark;
         border: 1px solid $success-dark;
     }
-    &.active, &:active, &:focus{
+
+    &.active,
+    &:active,
+    &:focus {
         background: $success-dark;
-        
+
     }
 }
 
@@ -1037,35 +1188,42 @@ Buttons
 .btn-info.disabled {
     background: $info;
     border: 1px solid $info;
-    
+
     transition: 0.2s ease-in;
-    &:hover{
+
+    &:hover {
         background: $info-dark;
         border: 1px solid $info-dark;
-        
+
     }
-    &.active, &:active, &:focus{
+
+    &.active,
+    &:active,
+    &:focus {
         background: $info-dark;
-        
+
     }
 }
 
 .btn-warning,
 .btn-warning.disabled {
     background: $warning;
-    color:$white;
+    color: $white;
     border: 1px solid $warning;
-    
-    &:hover{
+
+    &:hover {
         background: $warning-dark;
-        color:$white;
-        
+        color: $white;
+
         border: 1px solid $warning-dark;
     }
-    &.active, &:active, &:focus{
+
+    &.active,
+    &:active,
+    &:focus {
         background: $warning-dark;
-        color:$white;
-        
+        color: $white;
+
     }
 }
 
@@ -1073,101 +1231,126 @@ Buttons
 .btn-danger.disabled {
     background: $danger;
     border: 1px solid $danger;
-    
+
     transition: 0.2s ease-in;
-    &:hover{
+
+    &:hover {
         background: $danger-dark;
-        
+
         border: 1px solid $danger-dark;
     }
-    &.active, &:active, &:focus{
+
+    &.active,
+    &:active,
+    &:focus {
         background: $danger-dark;
-        
+
     }
 }
+
 .btn-inverse,
 .btn-inverse.disabled {
     background: $inverse;
     border: 1px solid $inverse;
-     color: $white;
-    &:hover{
+    color: $white;
+
+    &:hover {
         background: $inverse-dark;
-        
+
         color: $white;
         border: 1px solid $inverse-dark;
     }
-    &.active, &:active, &:focus{
+
+    &.active,
+    &:active,
+    &:focus {
         background: $inverse-dark;
         color: $white;
     }
 }
+
 .btn-red,
 .btn-red.disabled {
     background: $red;
     border: 1px solid $red;
     color: $white;
+
     &:hover {
-        
+
         border: 1px solid $red-dark;
         background: $red-dark;
     }
-    &.active, &:active, &:focus{
+
+    &.active,
+    &:active,
+    &:focus {
         background: $danger-dark;
     }
 }
 
-.btn-success-gradiant{
+.btn-success-gradiant {
     @include linear-gradient (to right, $success 0%, $success-dark 100%);
-    border:0px;
-    
-    &:hover{
+    border: 0px;
+
+    &:hover {
         @include linear-gradient (to right, $success-dark 0%, $success 100%);
-        
+
     }
-    &.active, &:active, &:focus{
+
+    &.active,
+    &:active,
+    &:focus {
         box-shadow: 0px;
         opacity: 1;
     }
 }
 
-.btn-danger-gradiant{
+.btn-danger-gradiant {
     @include linear-gradient (to right, $danger 0%, $orange 100%);
-    border:0px;
-    
-    &:hover{
+    border: 0px;
+
+    &:hover {
         @include linear-gradient (to right, $orange 0%, $danger 100%);
-        
+
     }
-    &.active, &:active, &:focus{
+
+    &.active,
+    &:active,
+    &:focus {
         box-shadow: 0px;
         opacity: 1;
     }
 }
 
-.btn-info-gradiant{
+.btn-info-gradiant {
     @include linear-gradient (to right, $info 0%, $primary 100%);
-    border:0px;
-    
-    &:hover{
+    border: 0px;
+
+    &:hover {
         @include linear-gradient (to right, $primary 0%, $info 100%);
-        
+
     }
-    &.active, &:active, &:focus{
+
+    &.active,
+    &:active,
+    &:focus {
         box-shadow: 0px;
         opacity: 1;
-    } 
+    }
 }
 
 .btn-outline-secondary {
     background-color: $white;
     color: $secondary;
     transition: 0.2s ease-in;
+
     &:hover,
     &:focus,
-    &.focus {
-        
-    }
-    &.active, &:active, &:focus{
+    &.focus {}
+
+    &.active,
+    &:active,
+    &:focus {
         background: $dark;
     }
 }
@@ -1175,35 +1358,44 @@ Buttons
 .btn-outline-primary {
     color: $primary;
     background-color: $white;
-    border-color:$primary;
+    border-color: $primary;
     transition: 0.2s ease-in;
+
     &:hover,
     &:focus,
     &.focus {
         background: $primary;
         color: $white;
-        border-color:$primary;
+        border-color: $primary;
     }
-    &.active, &:active, &:focus{
+
+    &.active,
+    &:active,
+    &:focus {
         background: $primary-dark;
     }
 }
 
-.btn-outline-success, a.btn-outline-success {
+.btn-outline-success,
+a.btn-outline-success {
     color: $success;
     background-color: transparent;
-    border-color:$success;
-    
+    border-color: $success;
+
     transition: 0.2s ease-in;
+
     &:hover,
     &:focus,
     &.focus {
         background: $success;
-        border-color:$success;
+        border-color: $success;
         color: $white;
-        
+
     }
-    &.active, &:active, &:focus{
+
+    &.active,
+    &:active,
+    &:focus {
         background: $success-dark;
     }
 }
@@ -1211,18 +1403,22 @@ Buttons
 .btn-outline-info {
     color: $info;
     background-color: transparent;
-    border-color:$info;
-    
+    border-color: $info;
+
     transition: 0.2s ease-in;
+
     &:hover,
     &:focus,
     &.focus {
         background: $info;
-        border-color:$info;
+        border-color: $info;
         color: $white;
-        
+
     }
-    &.active, &:active, &:focus{
+
+    &.active,
+    &:active,
+    &:focus {
         background: $info-dark;
     }
 }
@@ -1230,18 +1426,22 @@ Buttons
 .btn-outline-warning {
     color: $warning;
     background-color: transparent;
-    border-color:$warning;
-    
+    border-color: $warning;
+
     transition: 0.2s ease-in;
+
     &:hover,
     &:focus,
     &.focus {
         background: $warning;
-        border-color:$warning;
+        border-color: $warning;
         color: $white;
-        
+
     }
-    &.active, &:active, &:focus{
+
+    &.active,
+    &:active,
+    &:focus {
         background: $warning-dark;
     }
 }
@@ -1249,64 +1449,77 @@ Buttons
 .btn-outline-danger {
     color: $danger;
     background-color: transparent;
-    border-color:$danger;
-    
+    border-color: $danger;
+
     transition: 0.2s ease-in;
+
     &:hover,
     &:focus,
     &.focus {
         background: $danger;
-        border-color:$danger;
+        border-color: $danger;
         color: $white;
-        
+
     }
-    &.active, &:active, &:focus{
+
+    &.active,
+    &:active,
+    &:focus {
         background: $danger-dark;
     }
 }
+
 .btn-outline-red {
     color: $red;
     background-color: transparent;
-    border-color:$red;
+    border-color: $red;
+
     &:hover,
     &:focus,
     &.focus {
         background: $red;
-        border-color:$red;
+        border-color: $red;
         color: $white;
-        
+
     }
-    &.active, &:active, &:focus{
+
+    &.active,
+    &:active,
+    &:focus {
         background: $danger-dark;
     }
 }
+
 .btn-outline-inverse {
     color: $inverse;
     background-color: transparent;
-    border-color:$inverse;
+    border-color: $inverse;
+
     &:hover,
     &:focus,
     &.focus {
         background: $inverse;
-        border-color:$inverse;
+        border-color: $inverse;
         color: $white;
     }
 }
-.btn-outline-light:hover{
-        color:$dark!important;
-    }
+
+.btn-outline-light:hover {
+    color: $dark !important;
+}
+
 .btn-primary.active.focus,
 .btn-primary.active:focus,
 .btn-primary.active:hover,
 .btn-primary.focus:active,
 .btn-primary:active:focus,
 .btn-primary:active:hover,
-.open > .dropdown-toggle.btn-primary.focus,
-.open > .dropdown-toggle.btn-primary:focus,
-.open > .dropdown-toggle.btn-primary:hover,
+.open>.dropdown-toggle.btn-primary.focus,
+.open>.dropdown-toggle.btn-primary:focus,
+.open>.dropdown-toggle.btn-primary:hover,
 .btn-primary.focus,
 .btn-primary:focus {
-    background-color: $primary-dark ;
+    background-color: $primary-dark;
     border: 1px solid $primary-dark;
 }
 
@@ -1316,9 +1529,9 @@ Buttons
 .btn-success.focus:active,
 .btn-success:active:focus,
 .btn-success:active:hover,
-.open > .dropdown-toggle.btn-success.focus,
-.open > .dropdown-toggle.btn-success:focus,
-.open > .dropdown-toggle.btn-success:hover,
+.open>.dropdown-toggle.btn-success.focus,
+.open>.dropdown-toggle.btn-success:focus,
+.open>.dropdown-toggle.btn-success:hover,
 .btn-success.focus,
 .btn-success:focus {
     background-color: $success-dark;
@@ -1331,9 +1544,9 @@ Buttons
 .btn-info.focus:active,
 .btn-info:active:focus,
 .btn-info:active:hover,
-.open > .dropdown-toggle.btn-info.focus,
-.open > .dropdown-toggle.btn-info:focus,
-.open > .dropdown-toggle.btn-info:hover,
+.open>.dropdown-toggle.btn-info.focus,
+.open>.dropdown-toggle.btn-info:focus,
+.open>.dropdown-toggle.btn-info:hover,
 .btn-info.focus,
 .btn-info:focus {
     background-color: $info-dark;
@@ -1346,9 +1559,9 @@ Buttons
 .btn-warning.focus:active,
 .btn-warning:active:focus,
 .btn-warning:active:hover,
-.open > .dropdown-toggle.btn-warning.focus,
-.open > .dropdown-toggle.btn-warning:focus,
-.open > .dropdown-toggle.btn-warning:hover,
+.open>.dropdown-toggle.btn-warning.focus,
+.open>.dropdown-toggle.btn-warning:focus,
+.open>.dropdown-toggle.btn-warning:hover,
 .btn-warning.focus,
 .btn-warning:focus {
     background-color: $warning-dark;
@@ -1361,9 +1574,9 @@ Buttons
 .btn-danger.focus:active,
 .btn-danger:active:focus,
 .btn-danger:active:hover,
-.open > .dropdown-toggle.btn-danger.focus,
-.open > .dropdown-toggle.btn-danger:focus,
-.open > .dropdown-toggle.btn-danger:hover,
+.open>.dropdown-toggle.btn-danger.focus,
+.open>.dropdown-toggle.btn-danger:focus,
+.open>.dropdown-toggle.btn-danger:hover,
 .btn-danger.focus,
 .btn-danger:focus {
     background-color: $danger-dark;
@@ -1378,10 +1591,10 @@ Buttons
 .btn-inverse:active,
 .btn-inverse:focus,
 .btn-inverse:hover,
-.open > .dropdown-toggle.btn-inverse {
+.open>.dropdown-toggle.btn-inverse {
     background-color: $inverse-dark;
     border: 1px solid $inverse-dark;
-   
+
 }
 
 .btn-red:hover,
@@ -1392,16 +1605,17 @@ Buttons
 .btn-red:active,
 .btn-red:focus,
 .btn-red:hover,
-.open > .dropdown-toggle.btn-red {
+.open>.dropdown-toggle.btn-red {
     background-color: $red-dark;
     border: 1px solid $red-dark;
     color: $white;
 }
-.btn{
-    span.btn-devider{
+
+.btn {
+    span.btn-devider {
         display: inline-block;
         padding-left: 10px;
-        
+
     }
 }
 
@@ -1434,6 +1648,7 @@ Buttons
     width: 200%;
     margin-left: -100%;
     transition: margin 0.3s ease-in 0s;
+
     &:before,
     &:after {
         display: block;
@@ -1446,12 +1661,14 @@ Buttons
         color: white;
         box-sizing: border-box;
     }
+
     &:before {
         content: "";
         padding-right: 27px;
         background-color: $success;
         color: #FFFFFF;
     }
+
     &:after {
         content: "";
         padding-right: 24px;
@@ -1471,16 +1688,16 @@ Buttons
     top: -1px;
     bottom: 0;
     right: 35px;
-    
+
     border-radius: 20px;
     transition: all 0.3s ease-in 0s;
 }
 
-.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+.onoffswitch-checkbox:checked+.onoffswitch-label .onoffswitch-inner {
     margin-left: 0;
 }
 
-.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+.onoffswitch-checkbox:checked+.onoffswitch-label .onoffswitch-switch {
     right: 0px;
 }
 
@@ -1488,68 +1705,78 @@ Buttons
 /*-------------------*/
 /*Bootstrap 4 hack*/
 /*-------------------*/
-.card-columns{
-    column-gap:30px;
-    .card{
+.card-columns {
+    column-gap: 30px;
+
+    .card {
         margin-bottom: 30px;
     }
 }
+
 .invisible {
-  visibility: hidden !important;
+    visibility: hidden !important;
 }
 
 .hidden-xs-up {
-  display: none !important;
+    display: none !important;
 }
 
 @media (max-width: 575px) {
-  .hidden-xs-down {
-    display: none !important;
-  }
+    .hidden-xs-down {
+        display: none !important;
+    }
 }
 
 @media (min-width: 576px) {
-  .hidden-sm-up {
-    display: none !important;
-  }
+    .hidden-sm-up {
+        display: none !important;
+    }
 }
 
 @media (max-width: 767px) {
-  .hidden-sm-down {
-    display: none !important;
-  }
+    .hidden-sm-down {
+        display: none !important;
+    }
 }
 
 @media (min-width: 768px) {
-  .hidden-md-up {
-    display: none !important;
-  }
+    .hidden-md-up {
+        display: none !important;
+    }
 }
 
 @media (max-width: 991px) {
-  .hidden-md-down {
-    display: none !important;
-  }
+    .hidden-md-down {
+        display: none !important;
+    }
 }
 
 @media (min-width: 992px) {
-  .hidden-lg-up {
-    display: none !important;
-  }
+    .hidden-lg-up {
+        display: none !important;
+    }
 }
 
 @media (max-width: 1199px) {
-  .hidden-lg-down {
-    display: none !important;
-  }
+    .hidden-lg-down {
+        display: none !important;
+    }
 }
 
 @media (min-width: 1200px) {
-  .hidden-xl-up {
-    display: none !important;
-  }
+    .hidden-xl-up {
+        display: none !important;
+    }
 }
 
 .hidden-xl-down {
-  display: none !important;
-}   
+    display: none !important;
+}
+
+.coming-soon {
+    min-height: 400px;
+    overflow: auto;
+    background-size: cover;
+    background-position: top 20% center;
+    background-image: $c2a-image;
+}

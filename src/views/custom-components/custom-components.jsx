@@ -18,30 +18,32 @@ import TestimonialComponent from "./sections/testimonialcomponent.jsx";
 import BlogComponent from "./sections/blogcomponent.jsx";
 import C2aComponent from "./sections/c2acomponent.jsx";
 import ContactComponent from "./sections/contactcomponent.jsx";
+import CallToAction from "../../components/call-to-action/CallToAction"
 
 class CustomComponents extends React.Component {
   render() {
     return (
-        <div id="main-wrapper">
-            <Header />
-            <div className="page-wrapper">
-                <div className="container-fluid">
-                    <HeaderBanner2 />
-                    <HeaderComponent />
-                    <BannerComponent />
-                    <FormBannerComponent />
-                    <FeatureComponent />
-                    <PortfolioComponent />
-                    <PricingComponent />
-                    <TeamComponent />
-                    <TestimonialComponent />
-                    <BlogComponent />
-                    <C2aComponent />
-                    <ContactComponent />
-                </div>
-            </div>
-            <Footer />
+      <div id="main-wrapper">
+        <Header />
+        <div className="page-wrapper">
+          <div className="container-fluid">
+            <HeaderBanner2 />
+            <HeaderComponent />
+            <BannerComponent />
+            <FormBannerComponent />
+            <FeatureComponent />
+            <PortfolioComponent />
+            <PricingComponent />
+            <TeamComponent />
+            <TestimonialComponent />
+            <BlogComponent />
+            <C2aComponent />
+            <ContactComponent />
+            <CallToAction />
+          </div>
         </div>
+        <Footer />
+      </div>
     );
   }
 }

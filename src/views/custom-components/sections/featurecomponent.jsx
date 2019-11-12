@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React from 'react';
 
 import img1 from '../../../assets/images/features/feature13/img1.jpg';
@@ -68,7 +69,7 @@ class FeatureComponent extends React.Component {
                                 <div className="row">
                                     <div className="col-md-8">
                                         <div className="card-body d-flex no-block">
-                                            <div className="m-r-20"><img src={img1} width="70" className="rounded" /></div>
+                                            <div className="m-r-20"><img src={img1} width="70" className="rounded" alt="img" /></div>
                                             <div>
                                                 <h5 className="font-medium">Make your website in no-time with us.</h5>
                                             </div>
@@ -85,7 +86,7 @@ class FeatureComponent extends React.Component {
                                 <div className="row">
                                     <div className="col-md-8">
                                         <div className="card-body d-flex no-block">
-                                            <div className="m-r-20"><img src={img2} width="70" className="rounded" /></div>
+                                            <div className="m-r-20"><img src={img2} width="70" className="rounded" alt="img" /></div>
                                             <div>
                                                 <h5 className="font-medium">Make your website in no-time with us.</h5>
                                             </div>
@@ -102,7 +103,7 @@ class FeatureComponent extends React.Component {
                                 <div className="row">
                                     <div className="col-md-8">
                                         <div className="card-body d-flex no-block">
-                                            <div className="m-r-20"><img src={img3} width="70" className="rounded" /></div>
+                                            <div className="m-r-20"><img src={img3} width="70" className="rounded" alt="img" /></div>
                                             <div>
                                                 <h5 className="font-medium">Make your website in no-time with us.</h5>
                                             </div>
@@ -119,7 +120,7 @@ class FeatureComponent extends React.Component {
                                 <div className="row">
                                     <div className="col-md-8">
                                         <div className="card-body d-flex no-block">
-                                            <div className="m-r-20"><img src={img4} width="70" className="rounded" /></div>
+                                            <div className="m-r-20"><img src={img4} width="70" className="rounded" alt="img" /></div>
                                             <div>
                                                 <h5 className="font-medium">Make your website in no-time with us.</h5>
                                             </div>

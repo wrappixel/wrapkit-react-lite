@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React from 'react';
 
 class PricingComponent extends React.Component {

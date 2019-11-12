@@ -1,6 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
 
+
+
 // core components
 import Header from "../../components/header/header.jsx";
 import HeaderBanner from "../../components/banner/banner.jsx";
@@ -20,32 +22,37 @@ import Notification from "./sections/notification.jsx";
 import TooltipPopover from "./sections/tooltip-popover.jsx";
 import Typography from "./sections/typography.jsx";
 import JsComponents from "./sections/js-components.jsx";
+import CallToAction from "../../components/call-to-action/CallToAction"
+
 
 class Components extends React.Component {
+
+
   render() {
     return (
-        <div id="main-wrapper">
-            <Header />
-            <div className="page-wrapper">
-                <div className="container-fluid">
-                    <HeaderBanner />
-                    <Buttons />
-                    <Labels />
-                    <Pagination />
-                    <Images />
-                    <Breadcrumbs />
-                    <Cards />
-                    <Dropdowns />
-                    <Form />
-                    <Table />
-                    <Notification />
-                    <TooltipPopover />
-                    <Typography />
-                    <JsComponents />
-                </div>
-            </div>
-            <Footer />
+      <div id="main-wrapper">
+        <Header />
+        <div className="page-wrapper">
+          <div className="container-fluid">
+            <HeaderBanner />
+            <Buttons />
+            <Labels />
+            <Pagination />
+            <Images />
+            <Breadcrumbs />
+            <Cards />
+            <Dropdowns />
+            <Form />
+            <Table />
+            <Notification />
+            <TooltipPopover />
+            <Typography />
+            <JsComponents />
+            <CallToAction />
+          </div>
         </div>
+        <Footer />
+      </div>
     );
   }
 }

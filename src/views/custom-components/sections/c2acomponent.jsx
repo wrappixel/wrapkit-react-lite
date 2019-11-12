@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React from 'react';
 
 import img1 from '../../../assets/images/features/feature48/app-store.png';
@@ -31,8 +32,8 @@ class C2aComponent extends React.Component {
                         <div className="col-md-10 col-lg-7 text-center" data-aos="fade-up">
                             <h2 className="title text-white">Grab our IOS or Android App from Stores</h2>
                             <h6 className="subtitle text-white op-7 m-b-20">You can relay on our amazing features list and also our customer services will be great experience for you without doubt and in no-time.</h6>
-                            <a href="javascript:void(0)" className="m-b-20"><img src={img1} /></a>
-                            <a href="javascript:void(0)" className="m-b-20"><img src={img2} /></a>
+                            <a href="javascript:void(0)" className="m-b-20"><img src={img1} alt="img" /></a>
+                            <a href="javascript:void(0)" className="m-b-20"><img src={img2} alt="img" /></a>
                         </div>
                     </div>
                 </div>

@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React from 'react';
 
 import logo from '../../../assets/images/logos/green-logo.png';

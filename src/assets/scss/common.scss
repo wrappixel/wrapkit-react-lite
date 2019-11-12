@@ -8,7 +8,7 @@ File: scss
 
 /******************* 
 Topbar
-*******************/ 
+*******************/
 
 .topbar {
     padding: 0px;
@@ -21,71 +21,82 @@ Topbar
 /*******************
 Header 6
 *******************/
-.header6{ 
-    .navbar-toggler{
-        color:$white;
+.header6 {
+    .navbar-toggler {
+        color: $white;
     }
-    .navbar-brand{
+
+    .navbar-brand {
         line-height: 80px;
-    } 
+    }
 }
-.h6-nav-bar{
-    padding:0px;
-    .navbar-nav{
-        .nav-link{
+
+.h6-nav-bar {
+    padding: 0px;
+
+    .navbar-nav {
+        .nav-link {
             padding: 35px 15px;
-            color:rgba(255, 255, 255, 0.5);
+            color: rgba(255, 255, 255, 0.5);
+            transition-duration: 1.2s;
+            transition-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1);
         }
-        .nav-item:hover .nav-link, .nav-item.active .nav-link{
-            color:rgba(255, 255, 255, 1);
+
+        .nav-item:hover .nav-link,
+        .nav-item.active .nav-link {
+            color: rgba(255, 255, 255, 1);
         }
     }
-    .act-buttons{
-        .btn{
+
+    .act-buttons {
+        .btn {
             margin: 10px 0 10px 10px;
         }
     }
 }
 
 @media(max-width:1023px) {
-    .h6-nav-bar{
-        .navbar-nav{
-            .nav-link{
+    .h6-nav-bar {
+        .navbar-nav {
+            .nav-link {
                 padding: 15px 15px;
             }
         }
-        .act-buttons{
-            .btn{
+
+        .act-buttons {
+            .btn {
                 margin: 10px 0 10px 0px;
             }
         }
     }
 }
 
-.static-slider-head{
-    min-height: 600px; 
+.static-slider-head {
+    min-height: 600px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     overflow: auto;
-    background-size:cover;
+    background-size: cover;
     background-position: center center;
     background-image: $banner-image;
-    .title{
-        color:$white;
+
+    .title {
+        color: $white;
         font-weight: 700;
         font-size: 70px;
         line-height: 100px;
     }
-    .subtitle{
-        color:$white;
+
+    .subtitle {
+        color: $white;
         line-height: 30px;
     }
 }
 
-.carousel-item > img { 
-    width: 100%; 
-  }
+.carousel-item>img {
+    width: 100%;
+}
 
 
 /******************* 
@@ -171,6 +182,7 @@ card
 .card {
     border: 0px;
     margin-bottom: 30px;
+
     &.card-shadow {
         box-shadow: $card-shadow;
     }
@@ -192,13 +204,16 @@ Icon space
 
 .linking {
     color: $headingtext;
+
     i {
         font-size: 14px;
         margin-left: 10px;
         transition: 0.2s ease-in;
     }
+
     &:hover {
         color: $themecolor;
+
         i {
             margin-left: 15px;
         }
@@ -213,16 +228,19 @@ Listing
 .list-block {
     margin: 0px;
     padding: 0px;
+
     li {
         list-style: none;
         padding: 10px 0;
         display: flex;
+
         i {
             margin-right: 10px;
             flex-shrink: 0px;
             margin-top: 3px;
         }
     }
+
     &.with-underline {
         li {
             border-bottom: 1px solid $border;
@@ -239,8 +257,10 @@ Listing
 .img-inline {
     margin: 0px;
     padding: 0px;
+
     li {
         list-style: none;
+
         &.half-width {
             width: 49%;
             display: inline-block;
@@ -329,16 +349,20 @@ Owl carousel
 .owl-carousel {
     display: block;
     width: 100%;
+
     .owl-stage-outer {
         position: relative;
         overflow: hidden;
     }
+
     .owl-stage {
         position: relative;
     }
+
     .owl-item {
         float: left;
     }
+
     .owl-nav.disabled {
         display: none;
     }
@@ -373,6 +397,7 @@ line sticks
 .stick-bottom {
     position: relative;
     margin-bottom: 30px;
+
     >span {
         width: 30px;
         height: 2px;
@@ -494,39 +519,47 @@ position
     box-shadow: $card-shadow;
 }
 
-
-
 .pre-scroll {
     position: relative;
 }
 
 .mega-dropdown {
-    position: static;
+    position: relative;
+
     .dropdown-menu {
         width: 100%;
+        min-width: 400px !important;
         padding: 30px;
         margin-top: 0px;
         overflow: hidden;
+        right: 0;
+        left: unset;
     }
-    .list-style-none{
+
+    .list-style-none {
         font-size: 14px;
     }
-    .inside-bg{
+
+    .inside-bg {
         margin: -30px 0 -30px -30px;
     }
-    .inside-bg-right{
+
+    .inside-bg-right {
         margin: -30px -30px -30px 0;
     }
-    .bg-img{
-        background-size:cover;
+
+    .bg-img {
+        background-size: cover;
         height: 100%;
         padding: 30px;
     }
-    h6{
+
+    h6 {
         margin: 15px 0;
         font-size: 15px;
     }
 }
+
 /*************/
 /* General Listing*/
 /*************/
@@ -534,8 +567,10 @@ position
 .general-listing {
     padding: 0px;
     margin: 0px;
+
     li {
         list-style: none;
+
         a {
             color: $bodytext;
             display: flex;
@@ -543,21 +578,25 @@ position
             transition: 0.2s ease-in;
             align-items: center;
         }
+
         &:hover a {
             color: $themecolor;
             padding-left: 10px;
         }
+
         i {
             margin-right: 7px;
             vertical-align: middle;
         }
     }
+
     &.two-part {
         li {
             width: 49%;
             display: inline-block;
         }
     }
+
     &.only-li {
         li {
             padding: 5px 0;
@@ -578,6 +617,7 @@ position
     background: $border;
     color: $white;
     border-color: $border;
+
     &:focus {
         background: $border;
         color: $white;
@@ -603,15 +643,18 @@ position
         border-radius: 100%;
         margin: 0 5px;
         transition: 0.2s ease-in;
+
         &:hover {
             transform: translate3d(0px, -5px, 0px);
         }
     }
+
     &.light {
         a {
             color: $dark;
             background: $light;
         }
+
         a:hover {
             background: $dark;
             color: $white;
@@ -636,6 +679,7 @@ position
     background-position: center top;
     width: 100%;
     display: table;
+
     .banner-content {
         display: table-cell;
         vertical-align: middle;
@@ -792,12 +836,14 @@ Vertical tabs
 
 .vtabs {
     display: table;
+
     .tabs-vertical {
         width: 150px;
         border-bottom: 0px;
         border-right: 1px solid $border;
         display: table-cell;
         vertical-align: top;
+
         li .nav-link {
             color: $dark;
             margin-bottom: 10px;
@@ -805,6 +851,7 @@ Vertical tabs
             border-radius: $radius 0 0 $radius;
         }
     }
+
     .tab-content {
         display: table-cell;
         padding: 20px;
@@ -844,10 +891,12 @@ Vertical tabs
             border: 0px;
             margin-right: 3px;
             color: $bodytext;
+
             &.active {
                 background: $themecolor;
                 color: $white;
             }
+
             &:hover {
                 color: $white;
                 background: $themecolor;
@@ -1017,17 +1066,21 @@ Timeline page
 ul.list-icons {
     margin: 0px;
     padding: 0px;
+
     li {
         list-style: none;
         line-height: 30px;
         margin: 5px 0;
         transition: 0.2s ease-in;
+
         a {
             color: $bodytext;
+
             &:hover {
                 color: $themecolor;
             }
         }
+
         i {
             font-size: 13px;
             padding-right: 8px;
@@ -1038,22 +1091,25 @@ ul.list-icons {
 ul.list-inline {
     li {
         display: inline-block;
-         
-        &:first-child{
+
+        &:first-child {
             padding-left: 0px;
         }
-        a{
-            color:$bodytext;
-            &:hover{
-                color:$themecolor;
-                }
+
+        a {
+            color: $bodytext;
+
+            &:hover {
+                color: $themecolor;
+            }
         }
     }
-    
+
 }
 
 ul.two-part {
     margin: 0px;
+
     li {
         width: 48.8%;
     }
@@ -1073,24 +1129,29 @@ html body .accordion {
         border: 1px solid $border;
         background: transparent;
         margin-bottom: 10px;
+
         a {
             color: $muted;
         }
+
         &:hover {
             background-color: $info;
             border: 1px solid $info;
+
             a {
                 color: $white;
             }
         }
     }
+
     .card.active .card-header {
-            background-color: $info;
-            border: 1px solid $info;
-            a {
-                color: $white;
-            }
+        background-color: $info;
+        border: 1px solid $info;
+
+        a {
+            color: $white;
         }
+    }
 }
 
 
@@ -1099,13 +1160,16 @@ Breadcrumb
 =====================*/
 
 .bc-colored {
+
     .breadcrumb-item,
     .breadcrumb-item a {
         color: $white;
+
         &.active {
             opacity: 0.7;
         }
     }
+
     .breadcrumb-item+.breadcrumb-item::before {
         color: rgba(255, 255, 255, 0.4);
     }
@@ -1205,6 +1269,7 @@ Breadcrumb
 
 .card-outline-info {
     border-color: $info;
+
     .card-header {
         background: $info;
         border-color: $info;
@@ -1213,6 +1278,7 @@ Breadcrumb
 
 .card-outline-inverse {
     border-color: $inverse;
+
     .card-header {
         background: $inverse;
         border-color: $inverse;
@@ -1221,6 +1287,7 @@ Breadcrumb
 
 .card-outline-warning {
     border-color: $warning;
+
     .card-header {
         background: $warning;
         border-color: $warning;
@@ -1229,6 +1296,7 @@ Breadcrumb
 
 .card-outline-success {
     border-color: $success;
+
     .card-header {
         background: $success;
         border-color: $success;
@@ -1237,6 +1305,7 @@ Breadcrumb
 
 .card-outline-danger {
     border-color: $danger;
+
     .card-header {
         background: $danger;
         border-color: $danger;
@@ -1245,6 +1314,7 @@ Breadcrumb
 
 .card-outline-primary {
     border-color: $primary;
+
     .card-header {
         background: $primary;
         border-color: $primary;
@@ -1258,7 +1328,7 @@ Custom-select
 
 .custom-select {
     background: url(../../assets/images/ui/custom-select.png) right .75rem center no-repeat;
-    border:2px solid $border;
+    border: 2px solid $border;
     height: calc(2.25rem + 12px);
 }
 
@@ -1330,9 +1400,10 @@ textarea {
 }
 
 .input-group-addon {
-    [type="radio"]:not(:checked), 
-    [type="radio"]:checked, 
-    [type="checkbox"]:not(:checked), 
+
+    [type="radio"]:not(:checked),
+    [type="radio"]:checked,
+    [type="checkbox"]:not(:checked),
     [type="checkbox"]:checked {
         position: initial;
         opacity: 1;
@@ -1367,9 +1438,11 @@ custom modals
         border-radius: 100%;
         line-height: 19px;
     }
+
     .modal-body {
         overflow: hidden;
     }
+
     .modal-bg-img {
         background-size: cover;
         background-position: center center;
@@ -1384,6 +1457,7 @@ custom modals
         background-position: center top;
         padding: 40px;
     }
+
     .input-group {
         margin-top: -45px;
     }
@@ -1421,58 +1495,69 @@ Overlay headers and thrid dropdown
 /*******************
 common-innerpage-banner
 *******************/
-.banner-innerpage{
-    padding:150px 0 100px;
-    background-size:cover;
+.banner-innerpage {
+    padding: 150px 0 100px;
+    background-size: cover;
     background-position: center center;
-    .title{
-        color:$white;
+
+    .title {
+        color: $white;
         text-transform: uppercase;
         font-weight: 700;
         font-size: 40px;
         line-height: 40px;
     }
-    .subtitle{
-        color:$white;
-    }
-}  
-@media(max-width:900px) {
-    .static-slider10{
-        .title{
-                font-size:40px;
-                line-height: 45px;
-            }
+
+    .subtitle {
+        color: $white;
     }
 }
-.with-noborder{
-    .media{
-        border:0px;
+
+@media(max-width:900px) {
+    .static-slider10 {
+        .title {
+            font-size: 40px;
+            line-height: 45px;
+        }
+    }
+}
+
+.with-noborder {
+    .media {
+        border: 0px;
         padding: 0px;
         margin: 50px 0;
     }
 }
-.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
-      background: $themecolor; }
+
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+    background: $themecolor;
+}
 
 /*******************
 Footer 4
 *******************/
-.footer4{
-    .f4-bottom-bar{
+.footer4 {
+    .f4-bottom-bar {
         padding-top: 10px;
         margin-top: 20px;
+
         a {
             color: $bodytext;
+
             &:hover {
                 color: $info;
             }
         }
     }
+
     .round-social.light {
         a {
             width: 34px;
             height: 34px;
             line-height: 34px;
+
             &:hover {
                 background: $info;
             }
@@ -1484,16 +1569,18 @@ Footer 4
 Modal in center
 *******************/
 .modal-dialog {
-  min-height: calc(100vh - 60px);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  overflow: auto;
-  @media(max-width: 768px) {
-    min-height: calc(100vh - 20px);
-  }
+    min-height: calc(100vh - 60px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: auto;
+
+    @media(max-width: 768px) {
+        min-height: calc(100vh - 20px);
+    }
 }
-.animated{
+
+.animated {
     -webkit-animation-duration: 0.5s;
     animation-duration: 0.5s;
 }
