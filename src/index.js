@@ -1,7 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { createBrowserHistory } from "history";
-import {BrowserRouter as Router, Route, Switch
+import {
+    Route,
+    Switch,
+    HashRouter
 } from "react-router-dom";
 
 import './assets/scss/style.scss';
@@ -13,11 +16,11 @@ import CustomComponents from "./views/custom-components/custom-components.jsx";
 var hist = createBrowserHistory();
 
 ReactDOM.render(
-    <Router history={hist}>
+    <HashRouter history={hist}>
         <Switch>
             <Route path="/custom-components" component={CustomComponents} />
             <Route path="/" component={Components} />
         </Switch>
-    </Router>,
+    </HashRouter>,
     document.getElementById("root")
 );
