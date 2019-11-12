@@ -1,7 +1,7 @@
 {
   "name": "wrapkit-ui",
   "version": "0.1.0",
-  "homepage": "https://www.wrappixel.com/demos/ui-kit/wrapkit-react-free",
+  "homepage": "/",
   "private": true,
   "dependencies": {
     "@babel/runtime": "^7.6.3",
