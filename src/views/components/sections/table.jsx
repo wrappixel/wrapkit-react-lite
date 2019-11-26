@@ -1,24 +1,25 @@
 import React from 'react';
+import { Container, Row, Col, Table } from 'reactstrap';
 
-class Table extends React.Component {
+class PageTable extends React.Component {
     render() {
         return (
             <div>
                 <div className="spacer" id="table-component">
-                    <div className="container">
-                        <div className="row justify-content-center">
-                            <div className="col-md-7 text-center">
+                    <Container>
+                        <Row className="justify-content-center">
+                            <Col md="7" className="text-center">
                                 <h1 className="title font-bold">Table</h1>
                                 <h6 className="subtitle">Here you can check Demos we created based on WrapKit. Its quite easy to Create your own dream website &amp; dashboard in No-time.</h6>
-                            </div>
-                        </div>
-                    </div>
+                            </Col>
+                        </Row>
+                    </Container>
                 </div>
-                <div className="container">
-                    <div className="row">
-                        <div className="col-md-12">
+                <Container>
+                    <Row>
+                        <Col md="12">
                             <div className="table-responsive">
-                                <table className="table">
+                                <Table>
                                     <thead>
                                         <tr>
                                             <th>#</th>
@@ -72,14 +73,14 @@ class Table extends React.Component {
                                             <td><span className="label label-success">supporter</span> </td>
                                         </tr>
                                     </tbody>
-                                </table>
+                                </Table>
                             </div>
-                        </div>
-                    </div>
-                </div>
+                        </Col>
+                    </Row>
+                </Container>
             </div>
         );
     }
 }
 
-export default Table;
+export default PageTable;

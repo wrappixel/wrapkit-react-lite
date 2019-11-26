@@ -1,24 +1,24 @@
 import React from 'react';
-import { UncontrolledDropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
+import { UncontrolledDropdown, DropdownToggle, DropdownMenu, DropdownItem, Container, Row, Col, ButtonGroup } from 'reactstrap';
 
 class Dropdowns extends React.Component {
     render() {
         return (
             <div>
                 <div className="spacer" id="dropdowns-component">
-                    <div className="container">
-                        <div className="row justify-content-center">
-                            <div className="col-md-7 text-center">
+                    <Container>
+                        <Row className="justify-content-center">
+                            <Col md="7" className="text-center">
                                 <h1 className="title font-bold">Dropdowns</h1>
                                 <h6 className="subtitle">Here you can check Demos we created based on WrapKit. Its quite easy to Create your own dream website &amp; dashboard in No-time.</h6>
-                            </div>
-                        </div>
-                    </div>
+                            </Col>
+                        </Row>
+                    </Container>
                 </div>
-                <div className="container">
-                    <div className="row">
-                        <div className="col-md-12 text-center">
-                            <div className="btn-group">
+                <Container>
+                    <Row>
+                        <Col md="12" className="text-center">
+                            <ButtonGroup>{' '}
                                 <UncontrolledDropdown setActiveFromChild>
                                     <DropdownToggle tag="button" className="btn btn-danger" caret>
                                         Dropdown
@@ -29,8 +29,8 @@ class Dropdowns extends React.Component {
                                         <DropdownItem tag="a" href="/blah">Link 2</DropdownItem>
                                     </DropdownMenu>
                                 </UncontrolledDropdown>
-                            </div>
-                            <div className="btn-group">
+                            </ButtonGroup>
+                            <ButtonGroup>{' '}
                                 <UncontrolledDropdown setActiveFromChild>
                                     <DropdownToggle tag="button" className="btn btn-info" caret>
                                         Dropdown
@@ -41,8 +41,8 @@ class Dropdowns extends React.Component {
                                         <DropdownItem tag="a" href="/blah">Link 2</DropdownItem>
                                     </DropdownMenu>
                                 </UncontrolledDropdown>
-                            </div>
-                            <div className="btn-group">
+                            </ButtonGroup>
+                            <ButtonGroup>{' '}
                                 <UncontrolledDropdown setActiveFromChild>
                                     <DropdownToggle tag="button" className="btn btn-primary" caret>
                                         Dropdown
@@ -53,8 +53,8 @@ class Dropdowns extends React.Component {
                                         <DropdownItem tag="a" href="/blah">Link 2</DropdownItem>
                                     </DropdownMenu>
                                 </UncontrolledDropdown>
-                            </div>
-                            <div className="btn-group">
+                            </ButtonGroup>
+                            <ButtonGroup>{' '}
                                 <UncontrolledDropdown setActiveFromChild>
                                     <DropdownToggle tag="button" className="btn btn-warning" caret>
                                         Dropdown
@@ -65,8 +65,8 @@ class Dropdowns extends React.Component {
                                         <DropdownItem tag="a" href="/blah">Link 2</DropdownItem>
                                     </DropdownMenu>
                                 </UncontrolledDropdown>
-                            </div>
-                            <div className="btn-group">
+                            </ButtonGroup>
+                            <ButtonGroup>{' '}
                                 <UncontrolledDropdown setActiveFromChild>
                                     <DropdownToggle tag="button" className="btn btn-success" caret>
                                         Dropdown
@@ -77,8 +77,8 @@ class Dropdowns extends React.Component {
                                         <DropdownItem tag="a" href="/blah">Link 2</DropdownItem>
                                     </DropdownMenu>
                                 </UncontrolledDropdown>
-                            </div>
-                            <div className="btn-group">
+                            </ButtonGroup>
+                            <ButtonGroup>{' '}
                                 <UncontrolledDropdown setActiveFromChild>
                                     <DropdownToggle tag="button" className="btn btn-secondary" caret>
                                         Dropdown
@@ -89,10 +89,10 @@ class Dropdowns extends React.Component {
                                         <DropdownItem tag="a" href="/blah">Link 2</DropdownItem>
                                     </DropdownMenu>
                                 </UncontrolledDropdown>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                            </ButtonGroup>
+                        </Col>
+                    </Row>
+                </Container>
             </div>
         );
     }

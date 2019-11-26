@@ -1,22 +1,23 @@
 import React from 'react';
+import { Container, Row, Col } from 'reactstrap';
 
 class Typography extends React.Component {
     render() {
         return (
             <div>
                 <div className="spacer" id="typography-component">
-                    <div className="container">
-                        <div className="row justify-content-center">
-                            <div className="col-md-7 text-center">
+                    <Container>
+                        <Row className="justify-content-center">
+                            <Col md="7" className="text-center">
                                 <h1 className="title font-bold">Typography</h1>
                                 <h6 className="subtitle">Here you can check Demos we created based on WrapKit. Its quite easy to Create your own dream website &amp; dashboard in No-time.</h6>
-                            </div>
-                        </div>
-                    </div>
+                            </Col>
+                        </Row>
+                    </Container>
                 </div>
-                <div className="container">
-                    <div className="row">
-                        <div className="col-md-6">
+                <Container>
+                    <Row>
+                        <Col md="6">
                             <h4 className="card-title">Typography</h4>
                             <h6 className="card-subtitle">Use tags <code>h1 to h6</code> for get desire heading.</h6>
                             <h1>h1. Bootstrap heading</h1>
@@ -25,8 +26,8 @@ class Typography extends React.Component {
                             <h4>h4. Bootstrap heading</h4>
                             <h5>h5. Bootstrap heading</h5>
                             <h6>h6. Bootstrap heading</h6>
-                        </div>
-                        <div className="col-md-6">
+                        </Col>
+                        <Col md="6">
                             <h4 className="card-title">Heading with subtitle</h4>
                             <h6 className="card-subtitle">Use tags <code>h1 to h6</code> for get desire heading.</h6>
                             <h1>Heading 1 <small>Sub-heading</small></h1>
@@ -35,9 +36,9 @@ class Typography extends React.Component {
                             <h4>Heading 4 <small>Sub-heading</small></h4>
                             <h5>Heading 5 <small>Sub-heading</small></h5>
                             <h6>Heading 6 <small>Sub-heading</small></h6>
-                        </div>
-                    </div>
-                </div>
+                        </Col>
+                    </Row>
+                </Container>
             </div>
         );
     }

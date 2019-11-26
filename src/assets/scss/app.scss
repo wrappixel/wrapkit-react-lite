@@ -1106,27 +1106,6 @@ Buttons
     }
 }
 
-.btn-secondary,
-.btn-secondary.disabled {
-
-    transition: 0.2s ease-in;
-    background-color: $white;
-    color: $bodytext;
-
-    &:hover {
-
-        color: $white !important;
-    }
-
-    &.active,
-    &:active,
-    &:focus {
-        color: $white !important;
-        background: $dark;
-        border-color: $dark;
-    }
-}
-
 .btn-primary,
 .btn-primary.disabled {
     background: $primary;

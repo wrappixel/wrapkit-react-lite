@@ -1,116 +1,196 @@
 /* eslint-disable */
 import React from 'react';
+import { Pagination, PaginationItem, PaginationLink, Container, Row, Col } from 'reactstrap';
 
-class Pagination extends React.Component {
+class PagePagination extends React.Component {
     render() {
         return (
             <div>
                 <div className="spacer" id="pagination-component">
-                    <div className="container">
-                        <div className="row justify-content-center">
-                            <div className="col-md-7 text-center">
+                    <Container>
+                        <Row className="justify-content-center">
+                            <Col md="7" className="text-center">
                                 <h1 className="title font-bold">Pagination</h1>
                                 <h6 className="subtitle">Here you can check Demos we created based on WrapKit. Its quite easy to Create your own dream website &amp; dashboard in No-time.</h6>
-                            </div>
-                        </div>
-                    </div>
+                            </Col>
+                        </Row>
+                    </Container>
                 </div>
-                <div className="container">
-                    <div className="row">
-                        <div className="col-md-4 m-b-30">
-                            <h4 className="card-title">Simple pagination</h4>
-                            <h6 className="card-subtitle">To make pagination give class <code>pagination</code> to ul</h6>
-                            <nav aria-label="Page navigation example">
-                                <ul className="pagination">
-                                    <li className="page-item"><a className="page-link" href="#">Previous</a></li>
-                                    <li className="page-item"><a className="page-link" href="#">1</a></li>
-                                    <li className="page-item"><a className="page-link" href="#">2</a></li>
-                                    <li className="page-item"><a className="page-link" href="#">3</a></li>
-                                    <li className="page-item"><a className="page-link" href="#">Next</a></li>
-                                </ul>
-                            </nav>
-                        </div>
-                        <div className="col-md-4 m-b-30">
-                            <h4 className="card-title">Working with icons</h4>
-                            <h6 className="card-subtitle">To make pagination give class <code>pagination</code> to ul</h6>
-                            <nav aria-label="Page navigation example">
-                                <ul className="pagination">
-                                    <li className="page-item">
-                                        <a className="page-link" href="#" aria-label="Previous">
-                                            <span aria-hidden="true">&laquo;</span>
-                                            <span className="sr-only">Previous</span>
-                                        </a>
-                                    </li>
-                                    <li className="page-item"><a className="page-link" href="#">1</a></li>
-                                    <li className="page-item"><a className="page-link" href="#">2</a></li>
-                                    <li className="page-item"><a className="page-link" href="#">3</a></li>
-                                    <li className="page-item">
-                                        <a className="page-link" href="#" aria-label="Next">
-                                            <span aria-hidden="true">&raquo;</span>
-                                            <span className="sr-only">Next</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </nav>
-                        </div>
-                        <div className="col-md-4 m-b-30">
-                            <h4 className="card-title">Disabled and active states</h4>
-                            <h6 className="card-subtitle">To make pagination active or disable give class <code>.disabled & .active</code> to ul</h6>
-                            <nav aria-label="...">
-                                <ul className="pagination">
-                                    <li className="page-item disabled">
-                                        <a className="page-link" href="#" tabIndex="-1">Previous</a>
-                                    </li>
-                                    <li className="page-item"><a className="page-link" href="#">1</a></li>
-                                    <li className="page-item active">
-                                        <a className="page-link" href="#">2 <span className="sr-only">(current)</span></a>
-                                    </li>
-                                    <li className="page-item"><a className="page-link" href="#">3</a></li>
-                                    <li className="page-item">
-                                        <a className="page-link" href="#">Next</a>
-                                    </li>
-                                </ul>
-                            </nav>
-                        </div>
-                        <div className="col-md-6 m-b-30">
+                <Container>
+                    <Row>
+                        <Col md="6" className="m-b-30">
+                            <h4 className="card-title">Simple Pagination</h4>
+                            <Pagination aria-label="Page navigation example">
+                                <PaginationItem>
+                                    <PaginationLink first href="#" />
+                                </PaginationItem>
+                                <PaginationItem>
+                                    <PaginationLink previous href="#" />
+                                </PaginationItem>
+                                <PaginationItem>
+                                    <PaginationLink href="#">
+                                        1
+                                    </PaginationLink>
+                                </PaginationItem>
+                                <PaginationItem>
+                                    <PaginationLink href="#">
+                                        2
+                                    </PaginationLink>
+                                </PaginationItem>
+                                <PaginationItem>
+                                    <PaginationLink href="#">
+                                        3
+                                    </PaginationLink>
+                                </PaginationItem>
+                                <PaginationItem>
+                                    <PaginationLink href="#">
+                                        4
+                                    </PaginationLink>
+                                </PaginationItem>
+                                <PaginationItem>
+                                    <PaginationLink href="#">
+                                        5
+                                    </PaginationLink>
+                                </PaginationItem>
+                                <PaginationItem>
+                                    <PaginationLink next href="#" />
+                                </PaginationItem>
+                                <PaginationItem>
+                                    <PaginationLink last href="#" />
+                                </PaginationItem>
+                            </Pagination>
+                        </Col>
+                        <Col md="6" className="m-b-30">
+                            <h4 className="card-title">Disabled and Active States</h4>
+                            <Pagination aria-label="Page navigation example">
+                                <PaginationItem disabled>
+                                    <PaginationLink first href="#" />
+                                </PaginationItem>
+                                <PaginationItem disabled>
+                                    <PaginationLink previous href="#" />
+                                </PaginationItem>
+                                <PaginationItem active>
+                                    <PaginationLink href="#">
+                                        1
+                                    </PaginationLink>
+                                </PaginationItem>
+                                <PaginationItem>
+                                    <PaginationLink href="#">
+                                        2
+                                    </PaginationLink>
+                                </PaginationItem>
+                                <PaginationItem>
+                                    <PaginationLink href="#">
+                                        3
+                                    </PaginationLink>
+                                </PaginationItem>
+                                <PaginationItem>
+                                    <PaginationLink href="#">
+                                        4
+                                    </PaginationLink>
+                                </PaginationItem>
+                                <PaginationItem>
+                                    <PaginationLink href="#">
+                                        5
+                                    </PaginationLink>
+                                </PaginationItem>
+                                <PaginationItem>
+                                    <PaginationLink next href="#" />
+                                </PaginationItem>
+                                <PaginationItem>
+                                    <PaginationLink last href="#" />
+                                </PaginationItem>
+                            </Pagination>
+                        </Col>
+                        <Col md="6" className="m-b-30">
                             <h4 className="card-title">Sizing Large</h4>
-                            <h6 className="card-subtitle">Fancy larger or smaller pagination? Add<code>.pagination-lg </code> for additional sizes.</h6>
-                            <nav aria-label="...">
-                                <ul className="pagination pagination-lg">
-                                    <li className="page-item disabled">
-                                        <a className="page-link" href="#" tabIndex="-1">Previous</a>
-                                    </li>
-                                    <li className="page-item"><a className="page-link" href="#">1</a></li>
-                                    <li className="page-item"><a className="page-link" href="#">2</a></li>
-                                    <li className="page-item"><a className="page-link" href="#">3</a></li>
-                                    <li className="page-item">
-                                        <a className="page-link" href="#">Next</a>
-                                    </li>
-                                </ul>
-                            </nav>
-                        </div>
-                        <div className="col-md-6 m-b-30">
+                            <Pagination size="lg" aria-label="Page navigation example">
+                                <PaginationItem disabled>
+                                    <PaginationLink first href="#" />
+                                </PaginationItem>
+                                <PaginationItem disabled>
+                                    <PaginationLink previous href="#" />
+                                </PaginationItem>
+                                <PaginationItem active>
+                                    <PaginationLink href="#">
+                                        1
+                                    </PaginationLink>
+                                </PaginationItem>
+                                <PaginationItem>
+                                    <PaginationLink href="#">
+                                        2
+                                    </PaginationLink>
+                                </PaginationItem>
+                                <PaginationItem>
+                                    <PaginationLink href="#">
+                                        3
+                                    </PaginationLink>
+                                </PaginationItem>
+                                <PaginationItem>
+                                    <PaginationLink href="#">
+                                        4
+                                    </PaginationLink>
+                                </PaginationItem>
+                                <PaginationItem>
+                                    <PaginationLink href="#">
+                                        5
+                                    </PaginationLink>
+                                </PaginationItem>
+                                <PaginationItem>
+                                    <PaginationLink next href="#" />
+                                </PaginationItem>
+                                <PaginationItem>
+                                    <PaginationLink last href="#" />
+                                </PaginationItem>
+                            </Pagination>
+                        </Col>
+                        <Col md="6" className="m-b-30">
                             <h4 className="card-title">Sizing Small</h4>
-                            <h6 className="card-subtitle">Fancy larger or smaller pagination? Add<code>.pagination-sm </code> for additional sizes.</h6>
-                            <nav aria-label="...">
-                                <ul className="pagination pagination-sm">
-                                    <li className="page-item disabled">
-                                        <a className="page-link" href="#" tabIndex="-1">Previous</a>
-                                    </li>
-                                    <li className="page-item"><a className="page-link" href="#">1</a></li>
-                                    <li className="page-item"><a className="page-link" href="#">2</a></li>
-                                    <li className="page-item"><a className="page-link" href="#">3</a></li>
-                                    <li className="page-item">
-                                        <a className="page-link" href="#">Next</a>
-                                    </li>
-                                </ul>
-                            </nav>
-                        </div>
-                    </div>
-                </div>
+                            <Pagination size="sm" aria-label="Page navigation example">
+                                <PaginationItem disabled>
+                                    <PaginationLink first href="#" />
+                                </PaginationItem>
+                                <PaginationItem disabled>
+                                    <PaginationLink previous href="#" />
+                                </PaginationItem>
+                                <PaginationItem active>
+                                    <PaginationLink href="#">
+                                        1
+                                    </PaginationLink>
+                                </PaginationItem>
+                                <PaginationItem>
+                                    <PaginationLink href="#">
+                                        2
+                                    </PaginationLink>
+                                </PaginationItem>
+                                <PaginationItem>
+                                    <PaginationLink href="#">
+                                        3
+                                    </PaginationLink>
+                                </PaginationItem>
+                                <PaginationItem>
+                                    <PaginationLink href="#">
+                                        4
+                                    </PaginationLink>
+                                </PaginationItem>
+                                <PaginationItem>
+                                    <PaginationLink href="#">
+                                        5
+                                    </PaginationLink>
+                                </PaginationItem>
+                                <PaginationItem>
+                                    <PaginationLink next href="#" />
+                                </PaginationItem>
+                                <PaginationItem>
+                                    <PaginationLink last href="#" />
+                                </PaginationItem>
+                            </Pagination>
+                        </Col>
+                    </Row>
+                </Container>
             </div>
         );
     }
 }
 
-export default Pagination;
+export default PagePagination;
