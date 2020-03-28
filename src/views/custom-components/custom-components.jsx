@@ -20,36 +20,34 @@ import C2aComponent from "./sections/c2acomponent.jsx";
 import ContactComponent from "./sections/contactcomponent.jsx";
 import CallToAction from "../../components/call-to-action/CallToAction"
 
-class CustomComponents extends React.Component {
-  render() {
+const CustomComponents = () => {
     return (
-      <div id="main-wrapper">
-        <Header />
-        <div className="page-wrapper">
-          <div className="container-fluid">
-            <HeaderBanner2 />
-            <HeaderComponent />
-            <BannerComponent />
-            <FormBannerComponent />
-            <FeatureComponent />
-            <PortfolioComponent />
-            <PricingComponent />
-            <TeamComponent />
-            <TestimonialComponent />
-            <BlogComponent />
-            <C2aComponent />
-            <ContactComponent />
-            <CallToAction />
-          </div>
+        <div id="main-wrapper">
+            <Header />
+            <div className="page-wrapper">
+                <div className="container-fluid">
+                    <HeaderBanner2 />
+                    <HeaderComponent />
+                    <BannerComponent />
+                    <FormBannerComponent />
+                    <FeatureComponent />
+                    <PortfolioComponent />
+                    <PricingComponent />
+                    <TeamComponent />
+                    <TestimonialComponent />
+                    <BlogComponent />
+                    <C2aComponent />
+                    <ContactComponent />
+                    <CallToAction />
+                </div>
+            </div>
+            <Footer />
         </div>
-        <Footer />
-      </div>
     );
-  }
 }
 
 CustomComponents.propTypes = {
-  classes: PropTypes.object
+    classes: PropTypes.object
 };
 
 export default CustomComponents;

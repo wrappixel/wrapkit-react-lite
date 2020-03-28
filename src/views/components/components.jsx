@@ -25,34 +25,32 @@ import JsComponents from "./sections/js-components.jsx";
 import CallToAction from "../../components/call-to-action/CallToAction"
 
 
-class Components extends React.Component {
-    render() {
-        return (
-            <div id="main-wrapper">
-                <Header />
-                <div className="page-wrapper">
-                    <div className="container-fluid">
-                        <HeaderBanner />
-                        <Buttons />
-                        <Labels />
-                        <PagePagination />
-                        <Images />
-                        <Breadcrumbs />
-                        <Cards />
-                        <Dropdowns />
-                        <PageForm />
-                        <PageTable />
-                        <Notification />
-                        <TooltipPopover />
-                        <Typography />
-                        <JsComponents />
-                        <CallToAction />
-                    </div>
+const Components = () => {
+    return (
+        <div id="main-wrapper">
+            <Header />
+            <div className="page-wrapper">
+                <div className="container-fluid">
+                    <HeaderBanner />
+                    <Buttons />
+                    <Labels />
+                    <PagePagination />
+                    <Images />
+                    <Breadcrumbs />
+                    <Cards />
+                    <Dropdowns />
+                    <PageForm />
+                    <PageTable />
+                    <Notification />
+                    <TooltipPopover />
+                    <Typography />
+                    <JsComponents />
+                    <CallToAction />
                 </div>
-                <Footer />
             </div>
-        );
-    }
+            <Footer />
+        </div>
+    );
 }
 
 Components.propTypes = {

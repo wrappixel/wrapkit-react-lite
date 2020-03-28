@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {
     Button, Modal, ModalHeader, ModalBody, ModalFooter, Carousel,
     CarouselItem,
@@ -32,148 +32,119 @@ const items = [
     }
 ];
 
-class JsComponents extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            modal: false,
-            modal1: false,
-            modal2: false,
-            activeIndex: 0
-        };
+const JsComponents = (props) => {
 
-        this.toggle = this.toggle.bind(this);
-        this.toggle1 = this.toggle1.bind(this);
-        this.toggle2 = this.toggle2.bind(this);
+    const [modal, setModal] = useState(false);
+    const [modal1, setModal1] = useState(false);
+    const [modal2, setModal2] = useState(false);
+    const [activeIndex, setActiveIndex] = useState(0);
+    const [animating, setAnimating] = useState(false);
 
-        this.next = this.next.bind(this);
-        this.previous = this.previous.bind(this);
-        this.goToIndex = this.goToIndex.bind(this);
-        this.onExiting = this.onExiting.bind(this);
-        this.onExited = this.onExited.bind(this);
+    const toggle = () => {
+        setModal(!modal);
     }
 
-    toggle() {
-        this.setState(prevState => ({
-            modal: !prevState.modal
-        }));
+    const toggle1 = () => {
+        setModal1(!modal1);
     }
 
-    toggle1() {
-        this.setState(prevState => ({
-            modal1: !prevState.modal1
-        }));
+    const toggle2 = () => {
+        setModal2(!modal2);
     }
 
-    toggle2() {
-        this.setState(prevState => ({
-            modal2: !prevState.modal2
-        }));
+    const next = () => {
+        if (animating) return;
+        const nextIndex = activeIndex === items.length - 1 ? 0 : activeIndex + 1;
+        setActiveIndex(nextIndex);
     }
 
-    onExiting() {
-        this.animating = true;
+    const previous = () => {
+        if (animating) return;
+        const nextIndex = activeIndex === 0 ? items.length - 1 : activeIndex - 1;
+        setActiveIndex(nextIndex);
     }
 
-    onExited() {
-        this.animating = false;
+    const goToIndex = (newIndex) => {
+        if (animating) return;
+        setActiveIndex(newIndex);
     }
 
-    next() {
-        if (this.animating) return;
-        const nextIndex = this.state.activeIndex === items.length - 1 ? 0 : this.state.activeIndex + 1;
-        this.setState({ activeIndex: nextIndex });
-    }
+    const slides = items.map(item => (
+        <CarouselItem
+            className="custom-tag"
+            onExiting={() => setAnimating(true)}
+            onExited={() => setAnimating(false)}
+            key={item.src}
+        >
+            <img className="w-100" src={item.src} alt={item.altText} />
+            <CarouselCaption captionText={item.caption} captionHeader={item.caption} />
+        </CarouselItem>
+    ));
 
-    previous() {
-        if (this.animating) return;
-        const nextIndex = this.state.activeIndex === 0 ? items.length - 1 : this.state.activeIndex - 1;
-        this.setState({ activeIndex: nextIndex });
-    }
-
-    goToIndex(newIndex) {
-        if (this.animating) return;
-        this.setState({ activeIndex: newIndex });
-    }
-    render() {
-        const { activeIndex } = this.state;
-        const slides = items.map((item) => {
-            return (
-                <CarouselItem
-                    onExiting={this.onExiting}
-                    onExited={this.onExited}
-                    key={item.src}
-                >
-                    <img src={item.src} alt={item.altText} />
-                    <CarouselCaption captionText={item.caption} captionHeader={item.caption} />
-                </CarouselItem>
-            );
-        });
-        return (
-            <div>
-                <div className="spacer" id="js-component">
-                    <Container>
-                        <Row className="justify-content-center">
-                            <Col md="7" className="text-center">
-                                <h1 className="title font-bold">Javascript Components</h1>
-                                <h6 className="subtitle">Here you can check Demos we created based on WrapKit. Its quite easy to Create your own dream website &amp; dashboard in No-time.</h6>
-                            </Col>
-                        </Row>
-                    </Container>
-                </div>
+    return (
+        <div>
+            <div className="spacer" id="js-component">
                 <Container>
-                    <Row className="m-b-40">
-                        <Col md="6">
-                            <Button type="button" onClick={this.toggle} className="btn btn-block waves-effect waves-light btn-outline-primary m-b-30">Large Modal</Button>
-                            <Modal size="lg" isOpen={this.state.modal} toggle={this.toggle} className={this.props.className}>
-                                <ModalHeader toggle={this.toggle}>Modal title</ModalHeader>
-                                <ModalBody>
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                            </ModalBody>
-                                <ModalFooter>
-                                    <Button color="primary" onClick={this.toggle}>Do Something</Button>{' '}
-                                    <Button color="secondary" onClick={this.toggle}>Cancel</Button>
-                                </ModalFooter>
-                            </Modal>
-                            <Button type="button" onClick={this.toggle1} className="btn btn-block waves-effect waves-light btn-outline-primary m-b-30">Medium Modal</Button>
-                            <Modal size="md" isOpen={this.state.modal1} toggle={this.toggle1} className={this.props.className}>
-                                <ModalHeader toggle={this.toggle1}>Modal title</ModalHeader>
-                                <ModalBody>
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                            </ModalBody>
-                                <ModalFooter>
-                                    <Button color="primary" onClick={this.toggle1}>Do Something</Button>{' '}
-                                    <Button color="secondary" onClick={this.toggle1}>Cancel</Button>
-                                </ModalFooter>
-                            </Modal>
-                            <Button type="button" onClick={this.toggle2} className="btn btn-block waves-effect waves-light btn-outline-primary">Small Modal</Button>
-                            <Modal size="sm" isOpen={this.state.modal2} toggle={this.toggle2} className={this.props.className}>
-                                <ModalHeader toggle={this.toggle2}>Modal title</ModalHeader>
-                                <ModalBody>
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                            </ModalBody>
-                                <ModalFooter className="justify-content-center">
-                                    <Button color="primary" onClick={this.toggle2}>Cancel</Button>
-                                </ModalFooter>
-                            </Modal>
-                        </Col>
-                        <Col md="6">
-                            <Carousel
-                                activeIndex={activeIndex}
-                                next={this.next}
-                                previous={this.previous}
-                            >
-                                <CarouselIndicators items={items} activeIndex={activeIndex} onClickHandler={this.goToIndex} />
-                                {slides}
-                                <CarouselControl direction="prev" directionText="Previous" onClickHandler={this.previous} />
-                                <CarouselControl direction="next" directionText="Next" onClickHandler={this.next} />
-                            </Carousel>
+                    <Row className="justify-content-center">
+                        <Col md="7" className="text-center">
+                            <h1 className="title font-bold">Javascript Components</h1>
+                            <h6 className="subtitle">Here you can check Demos we created based on WrapKit. Its quite easy to Create your own dream website &amp; dashboard in No-time.</h6>
                         </Col>
                     </Row>
                 </Container>
             </div>
-        );
-    }
+            <Container>
+                <Row className="m-b-40">
+                    <Col md="6">
+                        <Button type="button" onClick={toggle.bind(null)} className="btn btn-block waves-effect waves-light btn-outline-primary m-b-30">Large Modal</Button>
+                        <Modal size="lg" isOpen={modal} toggle={toggle.bind(null)} className={props.className}>
+                            <ModalHeader toggle={toggle.bind(null)}>Modal title</ModalHeader>
+                            <ModalBody>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            </ModalBody>
+                            <ModalFooter>
+                                <Button color="primary" onClick={toggle.bind(null)}>Do Something</Button>{' '}
+                                <Button color="secondary" onClick={toggle.bind(null)}>Cancel</Button>
+                            </ModalFooter>
+                        </Modal>
+                        <Button type="button" onClick={toggle1.bind(null)} className="btn btn-block waves-effect waves-light btn-outline-primary m-b-30">Medium Modal</Button>
+                        <Modal size="md" isOpen={modal1} toggle={toggle1.bind(null)} className={props.className}>
+                            <ModalHeader toggle={toggle1.bind(null)}>Modal title</ModalHeader>
+                            <ModalBody>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            </ModalBody>
+                            <ModalFooter>
+                                <Button color="primary" onClick={toggle1.bind(null)}>Do Something</Button>{' '}
+                                <Button color="secondary" onClick={toggle1.bind(null)}>Cancel</Button>
+                            </ModalFooter>
+                        </Modal>
+                        <Button type="button" onClick={toggle2.bind(null)} className="btn btn-block waves-effect waves-light btn-outline-primary">Small Modal</Button>
+                        <Modal size="sm" isOpen={modal2} toggle={toggle2.bind(null)} className={props.className}>
+                            <ModalHeader toggle={toggle2.bind(null)}>Modal title</ModalHeader>
+                            <ModalBody>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            </ModalBody>
+                            <ModalFooter className="justify-content-center">
+                                <Button color="primary" onClick={toggle2.bind(null)}>Cancel</Button>
+                            </ModalFooter>
+                        </Modal>
+                    </Col>
+                    <Col md="6">
+                        <Carousel
+                            activeIndex={activeIndex}
+                            next={next.bind(null)}
+                            previous={previous.bind(null)}
+                        >
+                            <CarouselIndicators items={items} activeIndex={activeIndex} onClickHandler={goToIndex.bind(null)} />
+                            {slides}
+                            <CarouselControl direction="prev" directionText="Previous" onClickHandler={previous.bind(null)} />
+                            <CarouselControl direction="next" directionText="Next" onClickHandler={next.bind(null)} />
+                        </Carousel>
+                    </Col>
+                </Row>
+            </Container>
+        </div>
+    );
 }
 
 export default JsComponents;

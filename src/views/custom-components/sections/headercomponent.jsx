@@ -5,7 +5,7 @@ import { Row, Col, UncontrolledDropdown, DropdownToggle, DropdownMenu, DropdownI
 import logo from '../../../assets/images/logos/green-logo.png';
 import logo2 from '../../../assets/images/logos/white-logo.png';
 
-const HeaderComponent = (props) => {
+const HeaderComponent = () => {
     const [isOpen, setIsOpen] = useState(false);
 
     const toggle = () => setIsOpen(!isOpen);

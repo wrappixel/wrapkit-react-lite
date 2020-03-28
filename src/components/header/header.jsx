@@ -5,7 +5,7 @@ import { Container, NavbarBrand, Navbar, Nav, NavItem, NavbarToggler, Collapse }
 
 import logo from '../../assets/images/logos/white-text.png';
 
-const Header = (props) => {
+const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
 
     const toggle = () => setIsOpen(!isOpen);
