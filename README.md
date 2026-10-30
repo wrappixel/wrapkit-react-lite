@@ -1,12 +1,7 @@
 <!-- Heading of Template -->
 <h1>
-  <a href="https://www.wrappixel.com/templates/wrapkit-react-lite/">Wrapkit React UI Lite</a>
+  <a href="https://wrappixel.com/templates/wrapkit-react-lite"><b>Wrapkit React UI Lite</b></a>
 </h1>
-
-<!-- Main image of Template -->
-<a target="_blank" href="https://www.wrappixel.com/wp-content/uploads/edd/2020/04/wrapkit-react-lite-y.jpg">
-  <img src="https://www.wrappixel.com/wp-content/uploads/edd/2020/04/wrapkit-react-lite-y.jpg" />
-</a>
 
 <!-- Description of Template -->
 <p>
@@ -20,7 +15,7 @@ In the project directory, you can run:
 ### `npm start`
 
 Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
 
 The page will reload if you make edits.<br>
 You will also see any lint errors in the console.
@@ -28,7 +23,7 @@ You will also see any lint errors in the console.
 ### `npm test`
 
 Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+
 
 ### `npm run build`
 
@@ -38,7 +33,6 @@ It correctly bundles React in production mode and optimizes the build for the be
 The build is minified and the filenames include the hashes.<br>
 Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
 ### `npm run eject`
 
@@ -52,46 +46,23 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 
 ## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+You can learn more in the [Create React App documentation](https://react.dev/learn/creating-a-react-app).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
 
 <!-- Resources of Template -->
 <h2>Resources</h2>
 <ul>
 <li>  
-  Live Demo: <a href="https://www.wrappixel.com/demos/ui-kit/wrapkit-react-free/" rel="nofollow">https://www.wrappixel.com/demos/ui-kit/wrapkit-react-free/</a>
+  Live Demo: <a href="https://wrappixel.com/demos/ui-kit/wrapkit-react-free/" rel="nofollow"><b>https://wrappixel.com/demos/ui-kit/wrapkit-react-free/</b></a>
 </li>
 <li>
-    Download Page: <a href="https://www.wrappixel.com/templates/wrapkit-react-lite/" rel="nofollow">
- https://www.wrappixel.com/templates/wrapkit-react-lite/</a>
+    Download Page: <a href="https://wrappixel.com/templates/wrapkit-react-lite" rel="nofollow">
+ <b>https://wrappixel.com/templates/wrapkit-react-lite</b></a>
 </li>
 <li>
-    <a href="https://www.wrappixel.com/templates/wrapkit/#demos" rel="nofollow">WrapKit </a>Complete UI Kit - For Website Projects
+    <a href="https://wrappixel.com/templates/wrapkit#demos" rel="nofollow"><b>WrapKit</b> </a>Complete UI Kit - For Website Projects
 </li>
 </ul>
 
@@ -99,22 +70,22 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 <h2>Licensing</h2>
 <ul>
   <li>
-    <p>Copyright 2020 Wrappixel (<a href="https://www.wrappixel.com/" rel="nofollow">https://www.wrappixel.com/</a>)</p>
+    <p>Copyright 2020 Wrappixel (<a href="https://wrappixel.com" rel="nofollow"><b>https://wrappixel.com</b></a>)</p>
   </li>
   <li>
-    <p>Licensed under MIT (<a href="https://www.wrappixel.com/license/">https://www.wrappixel.com/license/</a>)</p>
+    <p>Licensed under MIT (<a href="https://wrappixel.com/license"><b>https://wrappixel.com/license</b></a>)</p>
   </li>
 </ul>
 
 <!-- Useful Links of Template -->
 <h2>Useful Links</h2>
 <ul>
-<li><a href="https://www.wrappixel.com" rel="nofollow">Bootstrap Templates</a> from Wrappixel</li>
-<li><a href="https://www.wrappixel.com/templates/category/react-templates/" rel="nofollow">React Templates</a> from Wrappixel</li>
-<li><a href="https://www.wrappixel.com/templates/category/vuejs-templates/" rel="nofollow">Vue Templates</a> from Wrappixel</li>
-<li><a href="https://www.wrappixel.com/templates/category/angular-templates/" rel="nofollow">Angular Templates</a> from Wrappixel</li>
-<li><a href="https://www.wrappixel.com/templates/category/free-templates/" rel="nofollow">Freebies</a> from Wrappixel</li>
-<li><a href="https://www.wrappixel.com/affiliate-area/" rel="nofollow">Affiliate Program</a></li>
+<li><a href="https://wrappixel.com" rel="nofollow"><b>Bootstrap Templates</b></a> from Wrappixel</li>
+<li><a href="https://wrappixel.com/react-templates" rel="nofollow"><b>React Templates</b></a> from Wrappixel</li>
+<li><a href="https://wrappixel.com/vue-templates" rel="nofollow"><b>Vue Templates</b></a> from Wrappixel</li>
+<li><a href="https://wrappixel.com/angular-templates" rel="nofollow"><b>Angular Templates</b></a> from Wrappixel</li>
+<li><a href="https://wrappixel.com/free-templates" rel="nofollow"><b>Freebies</b></a> from Wrappixel</li>
+<li><a href="https://wrappixel.com/affiliate-area" rel="nofollow"><b>Affiliate Program</b></a></li>
 </ul>
 
 <!-- Social Media of Wrappixel -->
